@@ -1,0 +1,70 @@
+/* Nav Style Utilities */
+
+    /* on scroll nav */
+        .navOnScroll{
+            background-color: blue;
+        }
+        .navOnScroll:hover {
+            background-color: black;
+        }
+
+/* Alltire Section Utilities */
+
+    /* Alltire on scroll */
+        .showAlltire {
+            opacity: 1;
+        }
+
+/* what we offer section utilities */
+
+    /* WWO on scroll */
+        .showWWO {
+            opacity: 1;
+        }
+/* PROMO UTILITIES */
+        .displayPromo {
+            transform: translateX(0);
+            transform: scale(0.9);
+        }
+
+/* about section utilities */
+        .displayAbout {
+            opacity: 1;
+        }
+        .hideSlide {
+            transform: translateX(-1000px);
+        }
+        .displaySlide {
+            transform: translateX(0);
+        }
+        .inactiveBtn {
+            background-color: transparent;
+        }
+        .activeBtn {
+            background-color: white;
+        }
+/* logo sect utilities */
+        .displayLogo {
+            opacity: 1;
+        }
+
+/* Testimonials Section Utilities */
+        .displayTestimonials {
+            opacity: 1;
+        }
+        .displayCard {
+            transform: translateX(0);
+            opacity: 1;
+        }
+        .activeTstmnlBtn {
+            background-color: white;
+            width: 50px;
+        }
+        .hidden {
+            background-color: transparent;
+            width: 20px;
+        }
+        .hideCard {
+            transform: translateX(-150%);
+            opacity: 0;
+        }

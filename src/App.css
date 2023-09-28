@@ -1,0 +1,1310 @@
+/* Universal style */ 
+body {
+  position: relative;
+}
+body::-webkit-scrollbar {
+  background-color: black;
+  width: 10px;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: blue;
+  border-radius: 20px;
+  cursor: grabbing;
+}
+
+/* Navigations style */
+
+    .nav {
+      position: fixed;
+      top: 0;
+      z-index: 5000;
+      width: 100%;
+      height: 60px;
+      background: transparent;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      transition: all 0.5s ease;
+    }
+    .logo {
+      width: 300px;
+      height: 90px;
+      transform: scale(0.7);
+      background-image: url("./assests/logo-2.png");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    .navbar {
+      display: flex;
+      width:75%;
+      justify-content: center;
+      align-items: center;
+      gap: 50px;
+      list-style-type: none;
+    }
+    .navbar .navbar {
+      width: auto;
+      gap: 50px;
+      padding: 0 auto;
+    }
+    .navbar a {
+      position: relative;
+      z-index: 1;
+      font-size: 20px;
+      color: #ffffff;
+      font-weight: 500;
+      text-decoration: none;
+      text-shadow: 1px 3px 5px black;
+    }
+    .nav-item::before {
+      content:'';
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background-color: #fff;
+      transition: .4s;
+    }
+    .nav-item:hover::before {
+      width: 100%;
+      box-shadow: 0px 0px 5px 2px black;
+    }
+    .login-btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 20px;
+      width: 150px;
+      height: 30px;
+      margin-left: 100px;
+      background: rgba(0, 0, 0, 0.592);
+      color: white;
+      text-shadow: 0px 2px 5px #000;
+      text-decoration: none;
+      font-weight: 700;
+      border-radius: 40px;
+      transition: 0.3s;
+      border: none;
+      cursor: pointer;
+    }
+    .login-btn:hover {
+      background-color: transparent;
+      outline: 5px solid white;
+    }
+    .hamburger {
+      display: none;
+      cursor: pointer;
+    }
+    .bar {
+      display: block;
+      width: 25px;
+      height: 3px;
+      margin: 5px auto;
+      -webkit-transition : all 0.3 ease-in-out;
+      transition: all 0.3s ease-in-out;
+      background-color: beige;
+    }
+
+  /* Hover animations for nav */
+    .nav:hover {
+      background-color: rgba(0, 0, 0, 0.453);
+    }
+
+
+/* HERO SECTION */
+    .bg-video {
+      position: relative;
+      z-index: 1500;
+      height: fit-content;
+      width: 100%;
+    }
+
+/* All tires */
+
+    .alltire-sect {
+      opacity: 0;
+      margin-bottom: 100px;
+      transition: all 1.5s ease-in-out;
+    }
+    .alltire-title {
+      display: flex;
+      font-size: 38px;
+      margin: 30px 0 0 0;
+      flex-direction: column;
+      align-items: center;
+      color: #4070f4;
+    }
+    .alltire-subtext {
+      display: flex;
+      font-size: 25px;
+      font-weight: 600;
+      margin: auto;
+      flex-direction: column;
+      align-items: center;
+      color: #4070f4;
+    }
+    .alltire-Btn {
+      padding: 15px 50px;
+      font-size: 18px;
+      text-decoration: none;
+      color: white;
+      background: #4070f4;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      transition: all 0.3s ease-in-out;
+    }
+    .alltire-dbtn {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+    /* hover animation */
+      .alltire-Btn:hover {
+        transform: scale(1.1);
+        box-shadow: 0px 0px 10px 0px black;
+        background: linear-gradient(to right, #292828d3, blue, #292828d3);
+      }
+    .alltires {
+      background: white;
+      height: 50vh;
+      width: 100%;
+      position: relative;
+      background-image:url("./assests/all\ tires.jpg");
+      background-size: auto;
+      background-position: center;
+      background-repeat: no-repeat;
+
+      z-index: 1;
+    }
+    .checkout-button {
+      padding: 5px 30px;
+    font-size: 20px;
+    background: #4070f4;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    color: white;
+    }
+    .cost-text {
+      font-size: large;
+      padding: 20px;
+    }
+
+/* What We Offer Section */
+
+    /* secttion styles */
+      .what-we-offer-sect {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        height: 600px;
+        opacity: 0;
+        background-color: rgb(185, 182, 182);
+        transition: all 1.5s ease;
+      }
+      .what-we-offer-sect h1 {
+        font-weight: 800;
+        font-size: 40px;
+      }
+      
+    /* card styles */
+      .wwo-card-container {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        align-items: center;
+      }
+      .wwo-section-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        text-align: center;
+        padding: 30px;
+        width: 250px;
+        height: 280px;
+        background-color:#4070f4 ;
+        color: white;
+        border: 2px solid white;
+        text-shadow: 2px 3px 5px Black;
+        border-radius: 20px;
+        font-size: 18px;
+        font-weight: 700;
+        transition: all 0.5s ease-in-out;
+      }
+
+    /* btn */
+      .offer-btn {
+        transition: all 0.3s ease-in-out;
+      }
+
+
+      /* hover animations */
+        .wwo-section-card:hover {
+          background: linear-gradient(45deg, rgba(128, 128, 128, 0.837), #4070f4, rgba(128, 128, 128, 0.837));
+          transform: scale(1.1);
+          box-shadow: 0 0 15px 0px black;
+        }
+       /* btn */
+        .offer-btn:hover {
+          color: #4070f4;
+          .wwo-section-card {
+            background: linear-gradient(45deg, rgba(128, 128, 128, 0.837), gold, rgba(128, 128, 128, 0.837));
+            transform: scale(1.1);
+            box-shadow: 0 0 15px 0px black;
+          }
+        }
+
+/* CAR SECTION */
+
+    .brand-container {
+      width: 90%;
+      margin: auto;
+      display: flex;
+      height: 100vh;
+
+    }
+    .brand-slide {
+      width: 250px;
+      margin: 0 4;
+    }
+    .brand-subcontainer {
+      width: 80%;
+      margin: auto;
+      display: flex;
+    }
+    .carmy-slider {
+      display: flex;
+      gap: 50px;
+      flex-wrap: wrap;
+      
+    }
+    .brandslide-img {
+      width: 100%;
+      height: 250px;
+      border-radius: 5px;
+      background-position: center;
+      background-size: contain;
+      cursor: pointer;
+      
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      transition: 0.5s;
+    }
+    .brandslide-img:hover {
+      transform: scale(1.3);
+      z-index: 2;
+
+    }
+    .brandslide-img .car-Btn{
+      opacity: 0;
+      text-decoration: none;
+      transform: scale(0);
+      transition: 0.8s;
+      font-size: 1.5rem;
+      color: #00a037;
+      border-radius: 20px;
+      font-size: 15px;
+      height: 32px;
+      width: 100px;
+
+    }
+
+    .brandslide-img:hover .car-Btn{
+      opacity: 1;
+      transform: scale(1);
+    }
+    .img-1 {
+      background-image: url(./assests/goodyear.jpg);
+      background-repeat: no-repeat;
+    }
+    .img-2 {
+      background-image: url(./assests/bridgestone.jpg);
+      background-repeat: no-repeat;
+    }.img-3 {
+      background-image: url(./assests/michelin.jpg);
+      background-repeat: no-repeat;
+    }
+    .img-4 {
+      background-image: url(./assests/continental.jpg);
+      background-repeat: no-repeat;
+    }
+    .img-5 {
+      background-image: url(./assests/dunlop.jpg);
+      background-repeat: no-repeat;
+    }
+    .img-6 {
+      background-image: url(./assests/pirelli.jpg);
+      background-repeat: no-repeat;
+    }
+    .img-7 {
+      background-image: url(./assests/nexen\ tire.jpg);
+      background-repeat: no-repeat;
+    }
+    .img-8 {
+      background-image: url(./assests/yokohama.jpg);
+      background-repeat: no-repeat;
+    }
+    @media(max-width:1600px){
+      .brand-container {
+        width: 100%;
+      }
+    }
+
+/* GALLERY */
+.tire-section {
+  min-height: 100vh;
+  background: #e7f2fd;
+  width: 90%;
+  margin: auto;
+}
+.tire-container {
+  position: relative;
+  max-width: 1350px;
+  width: 100%;
+  padding: 20px;
+  margin: 50px auto;
+}
+.filter_buttons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 30px;
+}
+button {
+  padding: 10px 20px;
+  font-size: 18px;
+  background: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+button.active {
+  background: #4070f4;
+  color:#fff;
+}
+.filterable_cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 25px;
+  gap: 40px;
+  margin: 0 100px;
+}
+.tire-card {
+  flex-basis: 200px;
+  background-color: #fff;
+  padding: 3px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.tire-card .tire-img{
+  width: 100%;
+  height: 210px;
+  border-radius: 8px 8px 0 0;
+  object-fit: cover;
+  margin: auto;
+}
+.tirecard_body {
+  padding: 15px 20px 20px;
+}
+.tirecard_title {
+  font-size: 15px;
+  font-weight: 500;
+  color: #333;
+  margin: auto;
+}
+.tirecard_text {
+  font-size: 15px;
+  color: #333;
+}
+.details-Btn{
+  padding: 5px 30px;
+  font-size: 13px;
+  background: #4070f4;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+
+    /* SUV */
+
+    .t-img1 {
+      background-image: url(./assests/Portrait/SUV/ASSURANCE\ DURAPLUS\ 2\ 4PR.jpg);
+      background-repeat: round;
+    }
+    .t-img2 {
+      background-image: url(./assests/Portrait/SUV/ASSURANCE\ MAXGUARD\ SUV\ 4PR.jpg);
+      background-repeat: round;
+    }
+    .t-img3 {
+      background-image: url(./assests/Portrait/SUV/ASSURANCE\ TRIPLEMAX\ 2\ 4PR.jpg);
+      background-repeat: round;
+    }
+    .t-img4 {
+      background-image: url(./assests/Portrait/SUV/BLUEARTH\ ES\ ES32\ 4PR.jpg);
+      background-repeat: round;
+    }
+    .t-img5 {
+      background-image: url(./assests/Portrait/SUV/CP661\ 4PR.jpg);
+      background-repeat: round;
+    }
+    .t-img6 {
+      background-image: url(./assests/Portrait/SUV/DUELER\ HT\ 684\ 4PR.jpg);
+      background-repeat: round;
+    }
+    .t-img7 {
+      background-image: url(./assests/Portrait/SUV/ECOPIA\ EP150\ 4PR.jpg);
+      background-repeat: round;
+    }
+    .t-img8 {
+      background-image: url(./assests/Portrait/SUV/ECOPIA\ EP150\ 4PR.jpg);
+      background-repeat: round;
+    }
+    .t-img9 {
+      background-image: url(./assests/Portrait/SUV/N\ BLUE\ HD\ PLUS\ 4PR.jpg);
+      background-repeat: round;
+    }
+    .t-img10 {
+      background-image: url(./assests/Portrait/SUV/N\ PRIZ\ SH9I\ 4PR.jpg);
+      background-repeat: round;
+    }
+    .t-img11 {
+      background-image: url(./assests/Portrait/SUV/ROADIAN\ AT\ PRO\ RA8\ 4PR.jpg);
+      background-repeat: round;
+    }
+
+    /* Sedan */
+
+    .t-img12 {
+      background-image: url(./assests/Portrait/Sedan/ASSURANCE\ DURAPLUS\ 2\ 4PR.jpg);
+      background-repeat: round;
+    }
+    .t-img13 {
+      background-image: url(./assests/Portrait/Sedan/ECOPIA\ EP150\ 4PR.jpg);
+      background-repeat: round;
+    }
+    .t-img14 {
+      background-image: url(./assests/Portrait/Sedan/ENASAVE\ EC300\ 4PR.jpg);
+      background-repeat: round;
+    }
+    .t-img15 {
+      background-image: url(./assests/Portrait/Sedan/ENERGY\ XM2\ +\ 4PR.jpg);
+      background-repeat: round;
+    }
+    .t-img16 {
+      background-image: url(./assests/Portrait/Sedan/N\ FERA\ SU1\ 4PR.jpg);
+      background-repeat: round;
+    }
+    .t-img17 {
+      background-image: url(./assests/Portrait/Sedan/PILOT\ SPORT\ 4\ 4PR.jpg);
+      background-repeat: round;
+    }
+    .t-img18 {
+      background-image: url(./assests/Portrait/Sedan/SP\ SPORT\ LM705\ 4PR.jpg);
+      background-repeat: round;
+    }
+    .t-img19 {
+      background-image: url(./assests/Portrait/Sedan/SP\ SPORT\ LM705\ 4PR.jpg);
+      background-repeat: round;
+    }
+    .t-img20 {
+      background-image: url(./assests/Portrait/Sedan/SP\ TOURING\ R1\ 4PR.jpg);
+      background-repeat: round;
+    }
+
+/* Form Cart */
+.cart-container {
+  min-height: 60vh;
+  background: white;
+  width: 90%;
+  margin: auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: row;
+  margin-top: 100px;
+}
+.app-form {
+  width: 65%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  padding: 15px;
+}
+.form-title {
+  height: 50px;
+  background-color: #00a037;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+}
+.info-text {
+  margin: 20px;
+}
+.user-details {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+.input-box {
+  width: 50%;
+  margin: 20px 0;
+}
+.box-input {
+  width: 90%;
+  height: 35px;
+}
+.cart-title {
+  height: 50px;
+  background-color: #3333334b;
+}
+.app-cart {
+  width: 35%;
+  padding: 15px;
+}
+.img-cart {
+  width: 130px;
+  height: 150px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+}
+.item-details {
+  display: flex;
+  float: left;
+}
+.cart-data {
+  display: flex;
+  flex-direction: column;
+}
+
+/* APPLE CODE */
+    *{
+      padding: 0;
+      margin: 0;
+      box-sizing: 0;
+    }
+
+    .brand-name{
+    color: white;
+    text-decoration: none;
+    }
+/* promo section */
+    .promo-sect {
+      position: fixed;
+      bottom: 0;
+      z-index: 999;
+      display: flex;
+      align-items: center;
+      width: 100%;
+      height: 50px;
+    }
+    .parent-container-promo {
+      height: 100%;
+      overflow: hidden;
+    }
+    .promo {
+      position: fixed;
+      bottom: 100px;
+      z-index: 1600;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      background-color: #716e6e66;
+      backdrop-filter: blur(10px);
+      transition: all 0.3s ease;
+      transform: translateX(-5000px);
+      border-radius: 20px;
+      box-shadow: 0px 0px 10px 0px black;
+    }
+    .promo-img{
+      transform: scale(0.8);
+      margin: 0;
+      padding: 0;
+    }
+    .promo-access-trigger {
+      position: fixed;
+      bottom: 5px;
+      z-index: 999;
+      right: -30px;
+      width: 500px;
+      padding: 10px;
+      color: white;
+      text-shadow: 2px 3px 5px black;
+      background-color: #4070f4;
+      text-align: center;
+      font-size: 20px;
+      font-weight: 800;
+      border-radius: 55px;
+      transform: scale(0.8);
+    }
+    .promo-to-shop-portal {
+      color: white;
+      transition: all 0.3s ease;
+    }
+    /* hover */
+        .promo-to-shop-portal:hover {
+          color: gold;
+        }
+
+  /* countdownTimer component Styles */
+    .countdown-timer-comp {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .countdown-timer-comp span {
+      color: white;
+      margin: 0 5px;
+      text-shadow: 2px 3px 5px black;
+    }
+
+    .bg-logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 250px;
+      width: 100%;
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("assests/tire\ background.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+    .logo-carousel{
+      background: blur(10px);
+      height: 350px;
+      width: 60%;
+      margin: auto;
+      padding-top: 70px;
+    }
+    .logo-size {
+      width: 20%;
+    }
+
+    .slick-slide div{
+      margin: 0 1rem;
+    
+    }
+    .promo-img{
+      height: 200px;
+      width: 400px;
+    }
+/* logo sect */
+
+    .bg-logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 250px;
+      width: 100%;
+      opacity: 0;
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("assests/tire\ background.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      transition: all 1.5s ease;
+    }
+    .logo-carousel{
+      background: blur(10px);
+      height: 350px;
+      width: 60%;
+      margin: auto;
+      padding-top: 70px;
+    }
+    .logo-size {
+      width: 20%;
+    }
+
+    .logo-img{
+      height: 100px;
+      width: 300px;
+      transform: scale(0.8);
+    }
+
+    .btn-shop{
+      font-size: 30px;
+      border-radius: 20px;
+      width: 200px;
+      height: 50px;
+      background-color: #af8231;
+      color: white;
+    }
+    .container-btn{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: 30px;
+    }
+
+    .btn-shop:hover{
+      background-color: #eecc8d;
+      color: black;
+    }
+
+    .dropdown{
+      height: 400px;
+      width: 100vw;
+      /* font-size: 100px; */
+    }
+    .select{
+      font-size: 30px;
+      width: 600px;
+      margin: 50px;
+    }
+  .dropdown{
+    height: 400px;
+    width: 100vw;
+    /* font-size: 100px; */
+  }
+  .select{
+    font-size: 30px;
+    width: 600px;
+    margin: 50px;
+  }
+/* testimonials section styles */
+  .testimonials-sect {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 650px;
+    opacity: 0;
+    transition: all 1.5s ease;
+    background: url("./assests/about-2.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  .testimonials-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 550px;
+    width: 60%;
+    height: 100%;
+    overflow: hidden;
+    background-color: #3f3b3bc6;
+  }
+  .testimonials-container h2 {
+    position: absolute;
+    top: 50px;
+    font-size: 30px;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+  }
+  .testimonial-card {
+    position: absolute;
+    top:60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 60%;
+    height: 350px;
+    background-color: #333;
+    padding: 20px;
+    margin-top: 70px;
+    border-radius: 30px;
+    border: 3px solid #4070f4;
+    transition: all 0.8s ease;
+  }
+  .tc-3,
+  .tc-5 {
+    transform: translateX(-150%);
+    opacity: 0;
+  }
+  .tc-2,
+  .tc-4 {
+    transform: translateX(150%);
+    opacity: 0;
+  }
+  /* images */
+      .tstmnl-img1 {
+        background-image: url("https://img.freepik.com/free-photo/front-view-smiley-man-seaside_23-2149737022.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 130px;
+        height: 130px;
+        border-radius: 100%;
+      }
+      .tstmnl-img2 {
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROyckB_9Ml-3cweS5RKL-BOWSKZ6eJIxJr_Q&usqp=CAU");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 130px;
+        height: 130px;
+        border-radius: 100%;
+      }
+      .tstmnl-img3 {
+        background-image: url("https://media.istockphoto.com/id/821437202/photo/portrait-of-young-handsome-asian-man-relaxing-at-the-park-in-bangkok-thailand.jpg?s=612x612&w=0&k=20&c=BbkYk9Y8MwlINwoNADZB9vwy3nggr-AhsKRAGT7zQbg=");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 130px;
+        height: 130px;
+        border-radius: 100%;
+      }
+      .tstmnl-img4 {
+        background-image: url("https://static.wixstatic.com/media/6c2903_9e24c293cf8649bc98713e76d6088705~mv2.jpeg/v1/fill/w_640,h_852,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/6c2903_9e24c293cf8649bc98713e76d6088705~mv2.jpeg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 130px;
+        height: 130px;
+        border-radius: 100%;
+      }
+      .tstmnl-img5 {
+        background-image: url("https://st3.depositphotos.com/1005372/15226/i/450/depositphotos_152267576-stock-photo-handsome-young-teen.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 130px;
+        height: 130px;
+        border-radius: 100%;
+      }
+
+  /* text */
+      .testimonial-person-name {
+        font-size: 20px;
+        color: white;
+        text-shadow: 2px 3px 3px black;
+      }
+      .stars {
+        display: flex;
+        color: gold;
+      }
+      .testimonial-txt {
+        color: white;
+        text-align: justify;
+      }
+      /* btns  */
+      .testimonial-navs {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        position: absolute;
+        bottom: 50px;
+      }
+      .tstmnl-nav {
+        width: 20px;
+        height: 20px;
+        border-radius: 100%;
+        border: 3px solid white;
+        transition: all 0.3s ease;
+      }
+      .tesNav-1 {
+        background-color: white;
+        width: 50px;
+      }
+/* ABOUT */
+
+.about-container {
+  position: relative;
+  z-index: 1500;
+  background-image: url(./assests/about-3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  opacity: 0;
+  transition: all 1.5s ease-in-out;
+}
+.about-recontainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(17, 17, 17, 0.466);
+  height: 500px;
+  width: 50%;
+  margin: auto;
+  overflow: hidden;
+}
+.about-logo {
+  position: absolute;
+  top: 5px;
+  left: -90px;
+  background-image: url(./assests/logo-2.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 160px;
+  width: 100%;
+  transform: scale(0.7);
+  display: flex;
+  margin-left: 250px;
+}
+.about-text {
+  position: absolute;
+  top: 155px;
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  color: rgb(197, 196, 196);
+}
+.about-sub1 {
+  position: absolute;
+  top: 200px;
+  font-size: 18px;
+  text-align: justify;
+  color: white;
+  margin: 30px;
+  transition: all 0.5s ease-in-out;
+}
+.about-sub2 {
+  position: absolute;
+  top: 200px;
+  transform: translateX(1000px);
+  font-size: 18px;
+  text-align: justify;
+  color: white;
+  margin: 30px;
+  transition: all 0.5s ease-in-out;
+}
+.btn-cont {
+  position: absolute;
+  bottom: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
+}
+.slideAboutBtn-1,
+.slideAboutBtn-2 {
+  text-align: center;
+  color: white;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  border-radius: 90%;
+  border: 2px solid white;
+  background: transparent;
+  transform: scale(0.7);
+  transition: all 0.3s ease;
+}
+.slideAboutBtn-1, 
+.slideBtn:hover {
+  color: black;
+  background-color: white;
+}
+.icon-footer {
+  position: absolute;
+  bottom: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.icon-fa {
+  height: 25px;
+  color: #3b5998;
+  transition: all 0.3s ease;
+}
+.icon-yt {
+  height: 25px;
+  color: #DB4437;
+  transition: all 0.3s ease;
+}
+.icon-google {
+  height: 25px;
+  color: #4285F4;
+  transition: all 0.3s ease;
+}
+.icon-contact {
+  height: 25px;
+  color: burlywood;
+  transition: all 0.3s ease;
+}
+  /* hovers */
+  .icon:hover {
+    transform: translateY(-8px);
+  }
+
+/* Location */
+.location-sect {
+  display:flex;
+  justify-content: space-around;
+  margin: 100px auto;
+}
+.dropdown{
+  height: 400px;
+  width: 20%;
+  max-width: 400px;
+}
+.select{
+  font-size: 30px;
+  width: 100%;
+  margin: 50px;
+}
+.location{
+  display: flex;
+  flex-wrap: wrap;
+  flex: 2;
+  justify-content: space-evenly;
+  height: 400px;
+  width: 70%;
+  max-width: 500px;
+  background-color:#eecc8d;
+  overflow-y: scroll;
+  padding: 5px;
+}
+.location::-webkit-scrollbar {
+  display: none;
+}
+.location::-webkit-scrollbar-track {
+  background-color: #eecc8d;
+}
+.location::-webkit-scrollbar-thumb {
+  background-color: aqua;
+  border-radius: 20px;
+}
+.card{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100px;
+  width: 500px;
+  border-radius: 2px solid black;
+  background-color:bisque;
+  margin: 10px;
+  padding: 5px;
+
+}
+.card-body{
+  list-style-type: none;
+}
+.province-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 200px;
+}
+.api-container {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.select-api {
+  height: 30px;
+  width: 300px;
+  font-size: 20px;
+  text-align: center;
+}
+.text-api {
+  text-align: center;
+  margin: 10px;
+}
+
+/* footer section */
+
+  .footer-sect {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    background-color: #000;
+  }
+  .footer-text,
+  .footer-text-2 {
+    color: white;
+    margin: 0 5px;
+  }
+  .footer-text {
+    text-decoration: underline;
+    transition: all 0.3s ease;
+  }
+  /* hover animtions */
+  .footer-text:hover {
+    color: #4070f4;
+  }
+
+/* order directory section */
+
+  .order-directory {
+    width: 100%;
+    height: 100vh;
+  }
+  .orderDir-container {
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 50px auto;
+  }
+  .orderDir-container h2 {
+    font-size: 30px;
+    color: white;
+    text-shadow: 2px 3px 5px black;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    background-color: #4070f4;
+  }
+  .orderDir-container table {
+    width: 100%;
+    height: 700px;
+    border: none;
+  }
+  .orderDir-container thead {
+    height: 40px;
+  }
+  .orderDir-container th {
+    background: linear-gradient(45deg, rgb(154, 152, 152), rgb(123, 191, 241), rgb(154, 152, 152));
+    color: white;
+    text-shadow: 2px 3px 5px black;
+    font-size: 20px;
+    border: 3px solid #4070f4;
+  }
+  .orderDir-container tbody {
+
+    overflow: scroll;
+  }
+
+   /* New tire container */
+   .product-container{
+    height: 100px;
+    width: 100vw;
+  }
+  .products{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-left: 180px;
+    width: 90%;
+  }
+  .products img{
+    width: 200px;
+    height: 250px;
+  }
+  .all-tire {
+    height: 80vh;
+  }
+  .product{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    
+    box-shadow: 0px 0px 10px 0px black;
+    /* margin-top: 50px; */
+  }
+  .tires{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100vw;
+    
+  
+  }
+  .btn-atc{
+   background-color: #4070f4;
+   color: #000;
+   border-radius: 10px;
+   /* margin-top: 20px; */
+  }
+  
+  .btn-gtc{
+    font-size: 20px;
+    padding: 10px;
+    margin: 20px;
+     margin-top: 100px;
+  }
+  .cart-header{
+    height: 150px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4070f4;
+    
+  }
+
+  /* LOCATION */
+  /* Location */
+.location-sect {
+  display:flex;
+  margin: 0 auto;
+}
+.dropdown{
+  height: 400px;
+  width: 20%;
+  /* font-size: 100px; */
+}
+.select{
+  font-size: 30px;
+  width: 600px;
+  margin: 50px;
+}
+.location{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  height: 400px;
+  width:75%;
+  background-color:#eecc8d;
+  overflow-y: scroll;
+  /* list-style-type: none; */
+}
+.location::-webkit-scrollbar {
+  display: none;
+}
+.location::-webkit-scrollbar-track {
+  background-color: #eecc8d;
+}
+.location::-webkit-scrollbar-thumb {
+  background-color: aqua;
+  border-radius: 20px;
+}
+.card{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100px;
+  width: 500px;
+  border-radius: 2px solid black;
+  background-color:bisque;
+  margin: 10px;
+  padding: 5px;
+
+}
+.card-body{
+  list-style-type: none;
+}
+.province-container {
+  display: flex;
+}
+.api-container {
+  margin: auto;
+}
+.select-api {
+  height: 30px;
+  width: 300px;
+  font-size: 20px;
+  text-align: center;
+}
+.text-api {
+  text-align: center;
+  margin: 10px;
+}
+
